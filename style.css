@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #2A2A2A;
+}
+
+.card{
+  width: 550px;
+  height: 275px;
+  background: linear-gradient(to right, #0E0E09, #2C2C2C);
+  box-shadow: 10px 20px 30px rgba(0,0,0,0.5);
+  display: flex;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.panther{
+  width: 350px;
+  position: absolute;
+  right: 30%;
+  top: 38%;
+  transition: all 0.5s ease;
+}
+
+.content{
+  width: 225px;
+}
+
+.heading{
+  color: #FFCC22;
+  font-size: 1.8rem;
+  font-family: 'Girassol', cursive;
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+}
+
+p{
+  color: #fff;
+  transform: translateX(-300px);
+  transition: all 0.5s ease;
+}
+
+button{
+  width: 80px;
+  height: 25px;
+  background: #FFCC22;
+  border: none;
+  margin-top: 20px;
+  transform: translateX(-300px);
+  transition: all 0.5s ease;
+}
+
+.card:hover .panther{
+  transform: translate(125px, 20px);
+}
+
+.card:hover p,
+.card:hover button{
+  transform: translateX(0);
+}
+
+.card:hover .heading{
+  font-size: 2.2rem;
+}
